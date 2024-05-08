@@ -57,13 +57,7 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode())
 ```    
-## TRANCEROUTE COMMAND:
-```
-from scapy.all import*     
-target = ["www.google.com"]     
-result, unans = traceroute(target,maxttl=32) 
-print(result,unans)
-```
+
 ## Output
 ## CLIENT
 ![image](https://github.com/sanjayashwinP/4.Execution_of_NetworkCommends/assets/147473265/18818903-e4bc-42c6-a54e-464e5019f9a5)
@@ -71,6 +65,14 @@ print(result,unans)
 ## SERVER
 ![image](https://github.com/sanjayashwinP/4.Execution_of_NetworkCommends/assets/147473265/61662956-c55d-4e0b-917e-f358b3edbc93)
 
+## TRANCEROUTE COMMAND:
+```
+from scapy.all import*     
+target = ["www.google.com"]     
+result, unans = traceroute(target,maxttl=32) 
+print(result,unans)
+```
+## OUTPUT
 ## TRANCEROUTE COMMAND
 ![image](https://github.com/sanjayashwinP/4.Execution_of_NetworkCommends/assets/147473265/b0c8005d-2f8f-45c3-8eb6-bd2f8bdd1af0)
 
